@@ -1,0 +1,257 @@
+body {
+    background: #d1d5db;
+}
+
+.nav-bar {
+    height: 100px;
+    margin-bottom: 20px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+}
+
+.text-banner {
+    position: absolute;
+}
+
+.bar-scnd {
+    background: #f3f4f6;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.bar-scnd h2{
+    display: flex;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.article-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.judul-iklan {
+    display: flex;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.keterangan-iklan {
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.banner-img {
+    background: #fff;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.recent-bar {
+    height: 850px;
+}
+
+.recomend-bar {
+    height: 400px;
+}
+
+.bar-berita-2 {
+    margin-top: 50px;
+}
+
+.tgl-bar {
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
+.judul-bar {
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+    display: flex;
+    text-align: left;
+    font-size: 22px;
+}
+
+.keterangan-judul {
+    display: flex;
+    text-align: left;
+}
+
+.img-berita {
+    border-radius: 20px;
+}
+
+.baris-2 {
+    margin-top: 20px;
+}
+
+.end-bar {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.profil-flex {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.scrol-bar {
+    display: flex;
+}
+
+.text-left {
+    display: flex;
+    text-align: left;
+    margin-left: 4px;
+}
+
+.profil-notgap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.bar-flex h4{
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.bar-flex p {
+    margin-left: 5px;
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+}
+
+.profil-dask {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profil-dask h2{
+    font-size: 15px;
+
+}
+
+.img-work {
+    border-radius: 20px;
+}
+
+.bar-vertikal {
+    margin-top: 20px;
+}
+
+.bar-vertikal2 {
+    margin-top: 40px;
+}
+
+.end-bar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 4px;
+}
+
+.end-col h4{
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-iphone {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.end-col {
+    margin-top: 100px;
+}
+
+button{
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      margin-top: -12px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.5s;
+      animation: 0.8s linear infinite rotate;
+    }
+    &.sending{
+      pointer-events: none;
+      cursor: not-allowed;
+      
+      &:before {
+        transition-delay: 0.5s;
+        transition-duration: 1s;
+        opacity: 1;
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @media screen and (max-width: 450px) {
+    .scrol-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    .bar-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .desk-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        width: auto;
+        margin: 0px;
+        position: absolute;
+    }
+  }
+
+
